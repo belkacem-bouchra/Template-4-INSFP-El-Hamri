@@ -1,0 +1,23 @@
+/* header .container = .about-content */
+header .container,
+.about-content,
+.types-content,
+.special-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .home-text p,
+.about-desc p,
+.testimonial-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.btn,
+header, .burger span, header .container nav ul li a, header .container nav ul li a::after,
+.type-img,
+.speciality img, .speciality h4,
+.teachers, .teacher .overlay, .teacher-desc, .teacher-social, .teacher-social a,
+.contact-social a {
+    transition: all 0.5s cubic-bezier(0.57, 0.1, 0.8, 1.03);
+}

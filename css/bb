@@ -1,0 +1,120 @@
+/* Start Header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .container .logo {
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 20px;
+    color: white;
+}
+header .container nav ul {
+    display: flex;
+}
+header .container nav ul li {
+    position: relative;
+}
+header .container nav ul li::after,
+header .container nav ul li:first-of-type:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: all 0.8s cubic-bezier(0.57, 0.1, 0.8, 1.03);
+}
+header .container nav ul li::after {
+    width: 0;
+}
+header .container nav ul li:first-of-type:after {
+    width: 100%;
+}
+header .container nav ul li:hover::after {
+    width: 100%;
+}
+header .container nav ul li a {
+    font-weight: 500;
+    color: white;
+    transition: all 0.8s cubic-bezier(0.57, 0.1, 0.8, 1.03);
+}
+header .container nav ul li:hover a {
+    color: var(--main-color);
+}
+header .container nav ul li:first-of-type a {
+    color: var(--main-color);
+}
+header .container nav ul li:not(:first-of-type) {
+    margin-left: 10px;
+}
+.search {
+    width: 35px;
+    height: 30px;
+    border-left: 1px solid white;
+    position: relative;
+    margin-left: 15px;
+}
+.search i {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 20px;
+    color: white;
+}
+@media (max-width: 992px) {
+    nav {
+        display: none;
+    }
+    .burger {
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    .burger span {
+        width: 100%;
+        background-color: white;
+        height: 2px;
+        margin-bottom: 5px;
+        transition: all 0.5s cubic-bezier(0.57, 0.1, 0.8, 1.03);
+    }
+    .burger span:nth-child(2) {
+        width: 70%;
+    }
+    .burger:hover span:nth-child(2) {
+        width: 100%;
+    }
+}
+@media (min-width: 993px) {
+    header .container nav {
+        display: flex;
+        align-items: center;
+    }
+    .burger {
+        display: none;
+    }
+}
+/*
+*/
+/* End Header */
+
+/* Desktop Screen */
+
+@media (min-width: 1280px) {
+
+}
+
+/* Tablet Screen */
+
+@media (min-width: 768px) {
+    
+}
+
+/* Mobile Screen */
+
+@media (min-width: 320px) {
+    
+}
